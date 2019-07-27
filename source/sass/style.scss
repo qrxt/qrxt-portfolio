@@ -1,4 +1,14 @@
-.avatar {
-  border-radius: 50%;
-  border: 2px solid white;
-}
+/* Вендоры */
+
+@import "vendors/normalize";
+
+/* Общие стили */
+
+@import "base";
+@import "variables";
+@import "mixins";
+// @import "fonts";
+
+/* Общие блоки */
+
+// @import "blocks/btn";
