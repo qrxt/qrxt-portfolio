@@ -1,15 +1,14 @@
 {
   "name": "qrxt-portfolio",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "Моя страница-портфолио",
   "main": "./src/js/index.js",
   "scripts": {
     "build": "gulp build",
     "start": "gulp start",
-
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "eslint" : "eslint \"source/js\"",
+    "eslint": "eslint \"source/js\"",
     "test": "npm run editorconfig && npm run stylelint && npm run eslint"
   },
   "author": "qrxt",
