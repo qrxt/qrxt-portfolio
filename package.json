@@ -1,7 +1,7 @@
 {
-  "name": "my-gulp-scss-boilerplate",
-  "version": "1.0.1",
-  "description": "My Gulp SCSS Boilerplate",
+  "name": "qrxt-portfolio",
+  "version": "0.1",
+  "description": "Моя страница-портфолио",
   "main": "./src/js/index.js",
   "scripts": {
     "build": "gulp build",
