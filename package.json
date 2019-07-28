@@ -1,5 +1,9 @@
 {
   "name": "qrxt-portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/qrxt/qrxt-portfolio.git"
+  },
   "version": "1.0.0",
   "description": "Моя страница-портфолио",
   "main": "./src/js/index.js",
