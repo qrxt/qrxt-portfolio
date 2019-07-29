@@ -26,3 +26,7 @@
     padding: 0 50px;
   }
 }
+
+@mixin reset-chrome-highlighting() {
+  -webkit-tap-highlight-color: transparent;
+}

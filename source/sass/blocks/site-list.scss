@@ -17,7 +17,7 @@
 }
 
 .site-list__item {
-  padding: 20px 50px;
+  position: relative;
   border-bottom: 1px solid $grey--light;
 }
 
@@ -26,5 +26,31 @@
 }
 
 .site-list__link {
+  display: block;
+  padding: 20px 50px;
   color: $primary-color;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+
+    @include reset-chrome-highlighting();
+  }
+}
+
+.site-list__link:hover .site-list__icon,
+.site-list__link:focus .site-list__icon {
+  fill: $secondary-color;
+}
+
+.site-list__icon {
+  display: block;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 20px;
+  opacity: 0.7;
 }
