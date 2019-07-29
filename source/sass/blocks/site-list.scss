@@ -1,0 +1,30 @@
+.site-list {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: $white;
+
+  @include normalize-list();
+
+  &--opened {
+    display: flex;
+  }
+}
+
+.site-list__item {
+  padding: 20px 50px;
+  border-bottom: 1px solid $grey--light;
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid $grey--light;
+}
+
+.site-list__link {
+  color: $primary-color;
+}

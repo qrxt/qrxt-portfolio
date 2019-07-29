@@ -15,6 +15,8 @@ const webp = require("gulp-webp");
 const cheerio = require("gulp-cheerio");
 const svgstore = require("gulp-svgstore");
 const terser = require("gulp-terser");
+const concat = require("gulp-concat");
+const iife = require("gulp-iife");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
 
@@ -44,7 +46,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/js/index.js", gulp.series("compress-js", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("compress-js", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("make-sprite", "refresh"));
   gulp.watch("source/*.html", gulp.series("minify-html", "refresh"));
 });
@@ -83,11 +85,12 @@ gulp.task("make-sprite", function () {
 });
 
 gulp.task("compress-js", function () {
-  return gulp.src("source/js/index.js")
+  return gulp.src("source/js/*.js")
     .pipe(gulp.dest("build/js"))
     .pipe(sourcemap.init())
     .pipe(terser())
-    .pipe(rename("index.min.js"))
+    .pipe(iife())
+    .pipe(concat("index.min.js"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"));
 });

@@ -4,11 +4,18 @@
 
 /* Общие стили */
 
-@import "base";
 @import "variables";
+@import "base";
 @import "mixins";
-// @import "fonts";
+@import "fonts";
 
 /* Общие блоки */
 
 // @import "blocks/btn";
+
+/* Блоки */
+
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/burger-menu";
