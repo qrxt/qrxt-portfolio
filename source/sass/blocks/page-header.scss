@@ -5,3 +5,15 @@
 .page-header__logo {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    padding-left: 25px;
+  }
+}

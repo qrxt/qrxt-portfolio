@@ -19,3 +19,17 @@
   width: 28px;
   height: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .main-nav__menu-btn {
+    display: none;
+  }
+}
