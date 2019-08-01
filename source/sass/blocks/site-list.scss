@@ -65,6 +65,10 @@
     width: 75%;
 
     @include set-font(15px, 24px, 700);
+
+    &--opened {
+      box-shadow: none;
+    }
   }
 
   .site-list__item {

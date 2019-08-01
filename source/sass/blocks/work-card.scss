@@ -42,6 +42,16 @@
   display: block;
   width: 100%;
   margin: 0 0 10px 0;
+
+  border: 1px solid $grey--light;
+
+  @include set-transition(border-color, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
+  &:hover,
+  &:focus {
+    border-color: $secondary-color;
+    outline: none;
+  }
 }
 
 .work-card__preview-link img {
