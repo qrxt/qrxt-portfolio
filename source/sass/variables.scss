@@ -7,6 +7,8 @@ $grey--light: #f1f1f1;
 
 $primary-color: $black;
 $secondary-color: #fb4024;
+$secondary-color--dark: darken($secondary-color, 10%);
+
 /*
   $bg-color:
   $title-color:

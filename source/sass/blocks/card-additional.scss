@@ -1,0 +1,32 @@
+.card-additional__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+
+  @include normalize-list();
+}
+
+.card-additional__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.card-additional__link:hover .card-additional__icon,
+.card-additional__link:focus .card-additional__icon {
+  @include set-transition(fill, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+  fill: $secondary-color;
+}
+
+.card-additional__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.card-additional__icon {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,58 @@
+.work-card {
+  border-bottom: 1px solid $grey--light;
+}
+
+.work-card__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 15px 0;
+}
+
+.work-card__inner-link {
+  text-decoration: underline;
+  text-decoration-color: $primary-color;
+  color: $secondary-color--dark;
+
+  @include set-transition(color, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    text-decoration-color: $secondary-color;
+    outline: none;
+  }
+}
+
+.work-card__logo-link {
+  display: block;
+  width: 86px;
+
+  @include set-transition(color, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+}
+
+.work-card__preview-link {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.work-card__preview-link img {
+  width: 100%;
+}
+
+.work-card__description {
+  margin: 0 0 15px 0;
+
+  @include set-font(16px, 24px, 400);
+}
+
+.work-card__footer {
+  margin-bottom: 10px;
+}

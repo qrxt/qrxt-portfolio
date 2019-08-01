@@ -68,9 +68,85 @@
     </nav>
   </header>
 
-  <body>
-    Lorem ipsum dolor sit amet
-  </body>
+  <main class="page-main">
+    <h1 class="visually-hidden">Страница-портфолио front-end разработчика</h1>
+    <section class="portfolio wrapper">
+      <h2 class="portfolio__title section-title">Портфолио</h2>
+      <p class="portfolio__description section-description">
+        Список моих работ
+      </p>
+      <ul class="portfolio__list">
+        <li class="portfolio__item work-card">
+          <header class="work-card__header">
+            <a class="work-card__logo-link" href="https://qrxt.github.io/409751-mishka-16/build/index.html">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop-mishka.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-mishka.svg">
+                <img src="img/logo-mobile-mishka.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+              </picture>
+            </a>
+
+            <ul class="work-card__platforms platforms-list">
+              <li class="platforms-list__item" title="Адаптировано для мобильных устройств">
+                <svg class="platforms-list__icon" width="20" height="20">
+                  <!-- https://www.flaticon.com/free-icon/mobile-phone_25658 -->
+                  <use xlink:href="img/sprite.svg#icon-mobile"></use>
+                </svg>
+              </li>
+              <li class="platforms-list__item" title="Адаптировано для планшетов">
+                <svg class="platforms-list__icon" width="20" height="20">
+                  <!-- https://www.flaticon.com/free-icon/computer-tablet_25466 -->
+                  <use xlink:href="img/sprite.svg#icon-tablet"></use>
+                </svg>
+              </li>
+              <li class="platforms-list__item" title="Адаптировано для больших экранов">
+                <svg class="platforms-list__icon" width="20" height="20">
+                  <!-- https://www.flaticon.com/free-icon/desktop-monitor_25240 -->
+                  <use xlink:href="img/sprite.svg#icon-desktop"></use>
+                </svg>
+              </li>
+            </ul>
+          </header>
+          <div class="work-card__body">
+            <a class="work-card__preview-link" href="https://qrxt.github.io/409751-mishka-16/build/index.html">
+              <picture>
+                <source type="image/webp" srcset="img/mishka-preview.webp 1x">
+
+                <img src="img/mishka-preview.jpg" width="260" height="200" alt="Превью «Мишка» для мобильных устройств">
+              </picture>
+            </a>
+            <p class="work-card__description">
+              Сайт магазина вещей ручной работы. Личный проект интенсива
+              <a class="work-card__inner-link" href="https://htmlacademy.ru/intensive/adaptive">
+                "Продвинутый&nbsp;HTML&nbsp;и CSS"
+              </a>
+              . Адаптирован для мобильных, планшетов и десктопов.
+              Содержит 3 страницы. Использует именование по методологии БЭМ.
+            </p>
+          </div>
+          <footer class="work-card__footer card-additional">
+            <ul class="card-additional__list">
+              <li class="card-additional__item">
+                <a class="card-additional__link" href="https://github.com/qrxt/409751-mishka-16">
+                  <svg class="card-additional__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="card-additional__item">
+                <a class="card-additional__link" href="https://qrxt.github.io/409751-mishka-16/build/index.html">
+                  <svg class="card-additional__icon" width="20" height="20">
+                    <!-- https://www.flaticon.com/free-icon/go-to-web_84136 -->
+                    <use xlink:href="img/sprite.svg#icon-go-to-web"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </footer>
+        </li>
+      </ul>
+    </section>
+  </main>
 
   <script src="js/vendors/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>

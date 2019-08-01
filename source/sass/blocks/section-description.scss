@@ -1,0 +1,6 @@
+.section-description {
+  text-align: center;
+  margin: 0 0 45px 0;
+
+  @include set-font(20px, 24px, 400);
+}

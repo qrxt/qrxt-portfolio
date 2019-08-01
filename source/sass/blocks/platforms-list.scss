@@ -1,0 +1,10 @@
+.platforms-list {
+  display: flex;
+  align-items: center;
+
+  @include normalize-list();
+}
+
+.platforms-list__item:not(:last-child) {
+  margin-right: 10px;
+}

@@ -15,7 +15,14 @@
 
 /* Блоки */
 
+@import "blocks/wrapper";
 @import "blocks/page-header";
+@import "blocks/section-title";
+@import "blocks/section-description";
 @import "blocks/main-nav";
 @import "blocks/site-list";
 @import "blocks/burger-menu";
+@import "blocks/portfolio";
+@import "blocks/work-card";
+@import "blocks/platforms-list";
+@import "blocks/card-additional";
