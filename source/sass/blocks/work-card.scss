@@ -41,7 +41,7 @@
 .work-card__preview-link {
   display: block;
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
 
   border: 1px solid $grey--light;
 
@@ -55,15 +55,36 @@
 }
 
 .work-card__preview-link img {
+  display: block;
   width: 100%;
 }
 
 .work-card__description {
   margin: 0 0 10px 0;
 
-  @include set-font(16px, 24px, 400);
+  @include set-font(16px, 24px);
 }
 
 .work-card__footer {
   margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .work-card__preview-link {
+    margin: 0 0 15px;
+  }
+
+  .work-card__logo-link {
+    width: 140px;
+    height: auto;
+  }
+
+  .work-card__logo-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .work-card__description {
+    @include set-font(18px, 28px);
+  }
 }

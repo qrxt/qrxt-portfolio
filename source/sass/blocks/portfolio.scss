@@ -1,7 +1,25 @@
+.portfolio__title {
+  margin: 0 0 15px;
+}
+
 .portfolio__list {
   @include normalize-list();
 }
 
 .portfolio__description {
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .portfolio__title {
+    margin: 0 0 12px;
+
+    @include set-font(40px, 30px, 700);
+  }
+
+  .portfolio__description {
+    margin: 0 0 45px;
+
+    @include set-font(20px, 26px);
+  }
 }

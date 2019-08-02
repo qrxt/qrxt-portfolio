@@ -30,6 +30,8 @@
   padding: 20px 50px;
   color: $primary-color;
 
+  @include set-transition(color, 0.15s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
   &:hover,
   &:focus {
     outline: none;
@@ -45,6 +47,8 @@
 
 .site-list__link:hover .site-list__icon,
 .site-list__link:focus .site-list__icon {
+  @include set-transition(fill, 0.15s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
   fill: $secondary-color;
 }
 

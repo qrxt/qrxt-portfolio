@@ -8,3 +8,14 @@
 .platforms-list__item:not(:last-child) {
   margin-right: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .platforms-list__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .platforms-list__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}

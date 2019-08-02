@@ -30,3 +30,10 @@
   width: 30px;
   height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .card-additional__icon {
+    width: 34px;
+    height: 34px;
+  }
+}
