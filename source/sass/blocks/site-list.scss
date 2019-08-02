@@ -101,4 +101,8 @@
   .site-list {
     width: 60%;
   }
+
+  .site-list__link {
+    @include set-font(20px, 24px, 700);
+  }
 }

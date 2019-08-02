@@ -19,3 +19,14 @@
     margin-right: 15px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .platforms-list__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .platforms-list__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
