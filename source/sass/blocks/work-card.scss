@@ -54,6 +54,10 @@
   }
 }
 
+.work-card__goto {
+  display: none;
+}
+
 .work-card__preview-link img {
   display: block;
   width: 100%;
@@ -100,9 +104,60 @@
   }
 
   .work-card__preview-link {
+    position: relative;
     width: 40%;
     flex-shrink: 0;
     margin: 0 40px 0 0;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      background-color: rgba($black, 0.4);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 5;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      @include set-transition(opacity, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .work-card__goto {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    z-index: 10;
+
+    text-align: center;
+    color: $white;
+
+    @include set-font(22px, 28px, 700);
+  }
+
+  .work-card__goto-icon {
+    fill: $white;
+    width: 40px;
+    height: 40px;
+  }
+
+  .work-card__preview-link:hover .work-card__goto,
+  .work-card__preview-link:focus .work-card__goto {
+    display: flex;
   }
 
   .work-card__logo-link {
@@ -111,6 +166,8 @@
 
   .work-card__description {
     margin: 0;
+
+    @include set-font(20px, 32px);
   }
 
   .work-card__footer {

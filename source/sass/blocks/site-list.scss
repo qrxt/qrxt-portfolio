@@ -8,7 +8,6 @@
   background-color: $white;
 
   @include normalize-list();
-  @include set-font(18px, 24px, 700);
 
   &--opened {
     display: block;
@@ -19,6 +18,8 @@
 .site-list__item {
   position: relative;
   border-bottom: 1px solid $grey--light;
+
+  @include set-font(18px, 24px, 700);
 }
 
 .site-list__item:first-child {
@@ -68,8 +69,6 @@
     flex-wrap: wrap;
     width: 75%;
 
-    @include set-font(15px, 24px, 700);
-
     &--opened {
       box-shadow: none;
     }
@@ -78,6 +77,8 @@
   .site-list__item {
     padding: 18px 0;
     border: none;
+
+    @include set-font(15px, 24px, 700);
   }
 
   .site-list__item:first-child {
@@ -102,7 +103,7 @@
     width: 60%;
   }
 
-  .site-list__link {
-    @include set-font(20px, 24px, 700);
+  .site-list__item {
+    @include set-font(22px, 24px, 700);
   }
 }
