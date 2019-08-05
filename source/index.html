@@ -39,7 +39,7 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a href="#" class="site-list__link">
+          <a href="#section-education" class="site-list__link">
               <svg class="site-list__icon site-list__icon--education" width="20" height="20">
                 <!-- https://www.flaticon.com/free-icon/open-book_182321 -->
                 <use xlink:href="img/sprite.svg#icon-education"></use>
@@ -71,6 +71,7 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Страница-портфолио front-end разработчика</h1>
+
     <section class="portfolio wrapper" id="section-portfolio">
       <h2 class="portfolio__title section-title">Портфолио</h2>
       <p class="portfolio__description section-description">
@@ -362,10 +363,32 @@
         </li>
       </ul>
     </section>
+
+    <section class="education wrapper" id="section-education">
+      <h2 class="education__title section-title">Обучение</h2>
+      <p class="education__description section-description">
+        Образование, курсы
+      </p>
+      <p class="education__text">
+        Я являюсь студентом ВУЗа по направлению "Прикладная информатика".
+        Ниже приведен список дополнительных пройденных мной курсов.
+      </p>
+      <ul class="education__courses-list courses-list">
+        <li class="courses-list__item">
+          <a class="courses-list__link">
+            <svg class="courses-list__icon" width="40" height="40">
+              <use xlink:href="img/sprite.svg#logo-hexlet"></use>
+            </svg>
+          </a>
+          <h3 class="courses-list__title">Hexlet</h3>
+          <p class="courses-list__description"></p>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <div class="overlay"></div>
-  <div class="back-to-top"></div>
+  <button type="button" class="back-to-top" aria-label="Наверх"></button>
 
   <script src="js/vendors/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>

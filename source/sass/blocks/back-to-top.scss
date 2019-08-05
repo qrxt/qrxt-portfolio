@@ -10,6 +10,8 @@
 
   background-image: url("../img/back-to-top.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
 
   &--show {
     display: block;

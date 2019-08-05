@@ -1,7 +1,9 @@
 .work-card {
-  margin-bottom: 45px;
-
   border-bottom: 1px solid $grey--light;
+}
+
+.work-card:not(:last-of-type) {
+  margin-bottom: 45px;
 }
 
 .work-card__header {
@@ -119,7 +121,7 @@
       left: 0;
       top: 0;
 
-      background-color: rgba($black, 0.4);
+      background-color: rgba($black, 0.6);
       visibility: hidden;
       opacity: 0;
       z-index: 5;
