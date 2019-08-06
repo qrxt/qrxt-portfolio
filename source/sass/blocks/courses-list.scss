@@ -48,9 +48,15 @@
 
 .courses-list__icon {
   transform: rotate(45deg) translate(0, -2px);
+
+  &--htmlacademy-first {
+    transform: rotate(45deg) translate(8px, 0);
+  }
 }
 
 .courses-list__title {
+  @include set-font(26px, 32px, 700);
+
   margin: 20px 0 10px;
 }
 
