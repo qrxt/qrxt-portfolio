@@ -30,3 +30,18 @@
 @mixin reset-chrome-highlighting() {
   -webkit-tap-highlight-color: transparent;
 }
+
+@mixin set-link-styles() {
+  text-decoration: underline;
+  text-decoration-color: $primary-color;
+  color: $secondary-color--dark;
+
+  @include set-transition(color, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    text-decoration-color: $secondary-color;
+    outline: none;
+  }
+}

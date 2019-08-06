@@ -1,3 +1,73 @@
 .courses-list {
   @include normalize-list();
 }
+
+.courses-list__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid $grey--light;
+}
+
+.courses-list__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.courses-list__link {
+  display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $primary-color;
+  transform: rotate(-45deg);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    @include set-transition(border-color, 0.15s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
+    outline: none;
+    border-color: $secondary-color;
+  }
+}
+
+.courses-list__inner-link {
+  @include set-link-styles();
+}
+
+.courses-list__icon {
+  transform: rotate(45deg) translate(0, -2px);
+}
+
+.courses-list__title {
+  margin: 20px 0 10px;
+}
+
+.courses-list__description {
+  margin: 0;
+
+  @include set-font(16px, 24px);
+}
+
+@media (min-width: $tablet-width) {
+  .courses-list__description {
+    @include set-font(18px, 28px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .courses-list__description {
+    @include set-font(20px, 32px);
+  }
+}
