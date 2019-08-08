@@ -56,6 +56,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .course {
+    position: relative;
+    padding-left: 125px;
+
+    border-bottom: none;
+  }
+
+  .course__link {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -5px;
+    top: calc(12%);
+
+    background-color: $white;
+  }
+
+  .course__icon {
+    transform: rotate(45deg) translate(6px, 0);
+
+    &--htmlacademy {
+      transform: rotate(45deg) translate(14px, 0);
+    }
+  }
+
   .course__description {
     @include set-font(18px, 28px);
   }
