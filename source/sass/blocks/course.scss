@@ -1,0 +1,68 @@
+.course {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid $grey--light;
+}
+
+.course__link {
+  display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $primary-color;
+  transform: rotate(-45deg);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    @include set-transition(border-color, 0.15s, cubic-bezier(0.215, 0.61, 0.355, 1));
+
+    outline: none;
+    border-color: $secondary-color;
+  }
+}
+
+.course__icon {
+  transform: rotate(45deg) translate(0, -2px);
+
+  &--htmlacademy {
+    transform: rotate(45deg) translate(8px, 0);
+  }
+}
+
+.course__inner-link {
+  display: block;
+
+  @include set-link-styles();
+}
+
+.course__title {
+  @include set-font(26px, 32px, 700);
+}
+
+.course__description {
+  @include set-font(16px, 24px);
+}
+
+@media (min-width: $tablet-width) {
+  .course__description {
+    @include set-font(18px, 28px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .course__description {
+    @include set-font(20px, 32px);
+  }
+}
