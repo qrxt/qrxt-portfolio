@@ -20,8 +20,9 @@
 
   &:hover,
   &:focus {
-    @include set-transition(opacity, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+    @include set-custom-transition(opacity);
 
+    outline: none;
     opacity: 1;
   }
 

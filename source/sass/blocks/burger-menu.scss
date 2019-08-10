@@ -3,7 +3,7 @@
   background-color: transparent;
   border: none;
 
-  @include set-transition(transform, 0.12s, cubic-bezier(0.215, 0.61, 0.355, 1));
+  @include set-custom-transition(transform);
 
   &::before,
   &::after {
@@ -15,7 +15,7 @@
     left: 0;
     background-color: $primary-color;
 
-    @include set-transition(background-color, 0.12s, cubic-bezier(0.215, 0.61, 0.355, 1));
+    @include set-custom-transition(background-color);
   }
 
   &::before {
@@ -52,7 +52,7 @@
 
   background-color: $primary-color;
 
-  @include set-transition(background-color, 0.12s, cubic-bezier(0.215, 0.61, 0.355, 1));
+  @include set-custom-transition(background-color);
 
   /* Подложка для большей области срабатывания кнопки */
   &::before {
@@ -75,12 +75,12 @@
   @include reset-chrome-highlighting();
 
   &::before {
-    @include set-transition(transform, 0.12s, cubic-bezier(0.215, 0.61, 0.355, 1));
+    @include set-custom-transition(transform);
     transform: translate(0, 10px);
   }
 
   &::after {
-    @include set-transition(transform, 0.12s, cubic-bezier(0.215, 0.61, 0.355, 1));
+    @include set-custom-transition(transform);
     transform: rotate(-90deg) translate(10px, 0);
   }
 }

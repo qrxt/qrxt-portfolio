@@ -1,0 +1,22 @@
+.descriptions {
+  position: relative;
+
+  @include normalize-list();
+}
+
+.descriptions__item {
+  visibility: hidden;
+  opacity: 0;
+
+  @include set-font(16px, 24px);
+
+  &--active {
+    @include set-custom-transition(opacity);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+}

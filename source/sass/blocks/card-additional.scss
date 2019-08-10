@@ -14,11 +14,15 @@
   &:focus {
     outline: none;
   }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .card-additional__link:hover .card-additional__icon,
 .card-additional__link:focus .card-additional__icon {
-  @include set-transition(fill, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+  @include set-custom-transition(fill);
   fill: $secondary-color;
 }
 

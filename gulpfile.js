@@ -48,6 +48,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/js/*.js", gulp.series("compress-js", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("make-sprite", "refresh"));
+  gulp.watch("source/img/logo-*.svg", gulp.series("make-sprite", "refresh"));
   gulp.watch("source/img/*.{png,jpg}", gulp.series("optimize-images", "refresh"));
   gulp.watch("source/*.html", gulp.series("minify-html", "refresh"));
 });

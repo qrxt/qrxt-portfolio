@@ -1,0 +1,34 @@
+.technologies {
+  margin-bottom: 40px;
+}
+
+.technologies__title {
+  margin: 0 0 15px;
+}
+
+.technologies__description {
+  margin: 0 0 30px;
+}
+
+.technologies__list {
+  @include normalize-list();
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 260px;
+  margin: 0 auto;
+}
+
+.technologies__item {
+  margin-bottom: 25px;
+}
+
+.technologies__item:not(:nth-child(3n)) {
+  margin-right: 50px;
+}
+
+.technologies__item:nth-child(4) {
+  margin-left: 50px;
+}

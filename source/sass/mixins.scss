@@ -31,17 +31,25 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+@mixin set-custom-transition($prop:all) {
+  @include set-transition($prop, 0.15s, cubic-bezier(0.215, 0.61, 0.355, 1));
+}
+
 @mixin set-link-styles() {
   text-decoration: underline;
   text-decoration-color: $primary-color;
   color: $secondary-color--dark;
 
-  @include set-transition(color, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+  @include set-custom-transition(color);
 
   &:hover,
   &:focus {
     color: $secondary-color;
     text-decoration-color: $secondary-color;
     outline: none;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

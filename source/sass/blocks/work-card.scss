@@ -18,25 +18,23 @@
   text-decoration-color: $primary-color;
   color: $secondary-color--dark;
 
-  @include set-transition(color, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
-
-  &:hover,
-  &:focus {
-    color: $secondary-color;
-    text-decoration-color: $secondary-color;
-    outline: none;
-  }
+  @include set-custom-transition(color);
+  @include set-link-styles();
 }
 
 .work-card__logo-link {
   display: block;
 
-  @include set-transition(opacity, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+  @include set-custom-transition(opacity);
 
   &:hover,
   &:focus {
     outline: none;
     opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -47,7 +45,7 @@
 
   border: 1px solid $grey--light;
 
-  @include set-transition(border-color, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+  @include set-custom-transition(border-color);
 
   &:hover,
   &:focus {
@@ -134,10 +132,14 @@
 
     &:hover::before,
     &:focus::before {
-      @include set-transition(opacity, 0.3s, cubic-bezier(0.215, 0.61, 0.355, 1));
+      @include set-custom-transition(opacity);
 
       visibility: visible;
       opacity: 1;
+    }
+
+    &:active::before {
+      opacity: 0.7;
     }
   }
 

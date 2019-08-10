@@ -1,0 +1,48 @@
+.tech__btn {
+  display: block;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    @include reset-chrome-highlighting();
+    @include set-custom-transition(opacity);
+
+    outline: none;
+    opacity: 0.7;
+  }
+}
+
+.tech__btn svg {
+  @include set-custom-transition(fill);
+}
+
+.tech__btn--js:focus svg,
+.tech__btn--js.tech__btn--active svg {
+  fill: darken(#fadf1c, 5%);
+}
+
+.tech__btn--html:focus svg,
+.tech__btn--html.tech__btn--active svg {
+  fill: #f0652a;
+}
+
+.tech__btn--css:focus svg,
+.tech__btn--css.tech__btn--active svg {
+  fill: #2aa9e0;
+}
+
+.tech__btn--gulp:focus svg,
+.tech__btn--gulp.tech__btn--active svg {
+  fill: #da4547;
+}
+
+.tech__btn--sass:focus svg,
+.tech__btn--sass.tech__btn--active svg {
+  fill: #cd6799;
+}
