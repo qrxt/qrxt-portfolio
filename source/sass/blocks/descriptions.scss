@@ -20,3 +20,18 @@
     opacity: 1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .descriptions__item {
+    @include set-font(18px, 28px);
+
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .descriptions__item {
+    @include set-font(20px, 32px);
+  }
+}
