@@ -3,6 +3,10 @@ const KEYCODE_SPACE = 32;
 const techButtons = document.querySelectorAll(".tech__btn");
 const descriptions = document.querySelectorAll(".descriptions__item");
 
+const isMobile = function () {
+  return window.matchMedia("(max-width: 700px)").matches;
+};
+
 const cardSelectorsForModifiers = {
   "tech__btn--js": ".descriptions__item--js",
   "tech__btn--html": ".descriptions__item--html",
@@ -45,4 +49,9 @@ techButtons.forEach(function (btn) {
   });
 });
 
-techButtons[1].click();
+// Активировать средний элемент
+if (isMobile()) {
+  techButtons[1].click();
+} else {
+  techButtons[2].click();
+}

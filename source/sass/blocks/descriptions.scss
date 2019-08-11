@@ -5,6 +5,7 @@
 }
 
 .descriptions__item {
+  position: absolute;
   visibility: hidden;
   opacity: 0;
 
@@ -12,8 +13,6 @@
 
   &--active {
     @include set-custom-transition(opacity);
-
-    position: absolute;
     left: 0;
     top: 0;
     visibility: visible;

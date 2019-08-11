@@ -20,6 +20,22 @@
   height: 22px;
 }
 
+.main-nav--nojs {
+  padding: 0;
+  width: 100%;
+}
+
+.main-nav--nojs .page-header__logo {
+  padding: 10px;
+}
+
+.main-nav--nojs .site-list {
+  position: static;
+  width: 100%;
+
+  box-shadow: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;

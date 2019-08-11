@@ -46,3 +46,30 @@
 .tech__btn--sass.tech__btn--active svg {
   fill: #cd6799;
 }
+
+@media (min-width: $tablet-width) {
+  .tech__btn--js:hover svg,
+  .tech__btn--js.tech__btn--active svg {
+    fill: darken(#fadf1c, 5%);
+  }
+
+  .tech__btn--html:hover svg,
+  .tech__btn--html.tech__btn--active svg {
+    fill: #f0652a;
+  }
+
+  .tech__btn--css:hover svg,
+  .tech__btn--css.tech__btn--active svg {
+    fill: #2aa9e0;
+  }
+
+  .tech__btn--gulp:hover svg,
+  .tech__btn--gulp.tech__btn--active svg {
+    fill: #da4547;
+  }
+
+  .tech__btn--sass:hover svg,
+  .tech__btn--sass.tech__btn--active svg {
+    fill: #cd6799;
+  }
+}
