@@ -48,6 +48,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tech__btn:hover {
+    cursor: pointer;
+  }
+
   .tech__btn--js:hover svg,
   .tech__btn--js.tech__btn--active svg {
     fill: darken(#fadf1c, 5%);

@@ -5,16 +5,23 @@
 }
 
 .descriptions__item {
+  padding: 0 30px;
   position: absolute;
   visibility: hidden;
   opacity: 0;
+  color: transparent;
 
   @include set-font(16px, 24px);
 
   &--active {
-    @include set-custom-transition(opacity);
-    left: 0;
-    top: 0;
+    @include set-custom-transition(color);
+
+    color: $primary-color;
+
+    padding: 5px 30px;
+    background-color: $grey--light;
+    min-height: 110px;
+    position: static;
     visibility: visible;
     opacity: 1;
   }
@@ -32,5 +39,11 @@
 @media (min-width: $desktop-width) {
   .descriptions__item {
     @include set-font(20px, 32px);
+
+    background-color: transparent;
+
+    &--active {
+      padding: 15px 30px;
+    }
   }
 }
