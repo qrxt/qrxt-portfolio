@@ -43,6 +43,7 @@
     background-color: transparent;
 
     &--active {
+      min-height: auto;
       padding: 15px 30px;
     }
   }
