@@ -1,0 +1,28 @@
+.about {
+  margin-bottom: 40px;
+}
+
+.about__title {
+  margin: 0 0 15px;
+}
+
+.about__text {
+  margin: 0 0 10px;
+
+  @include set-font(16px, 24px);
+}
+
+@media (min-width: $tablet-width) {
+  .about__text {
+    @include set-font(18px, 28px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about__text {
+    margin: 0;
+    text-align: center;
+
+    @include set-font(20px, 32px);
+  }
+}
