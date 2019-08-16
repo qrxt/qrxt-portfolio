@@ -446,24 +446,24 @@ a {
     margin: 0 60px; } }
 
 .highlighted {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: highlighted;
           animation-name: highlighted; }
 
 @-webkit-keyframes highlighted {
   from {
-    background-color: #fec3ba; }
-  50% {
     background-color: white; }
+  50% {
+    background-color: #ffefec; }
   to {
     background-color: transparent; } }
 
 @keyframes highlighted {
   from {
-    background-color: #fec3ba; }
-  50% {
     background-color: white; }
+  50% {
+    background-color: #ffefec; }
   to {
     background-color: transparent; } }
 

@@ -1,15 +1,15 @@
 .highlighted {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: highlighted;
 }
 
 @keyframes highlighted {
   from {
-    background-color: lighten($secondary-color, 30%);
+    background-color: lighten($secondary-color, 100%);
   }
 
   50% {
-    background-color: lighten($secondary-color, 100%);
+    background-color: lighten($secondary-color, 40%);
   }
 
   to {
