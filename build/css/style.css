@@ -445,6 +445,28 @@ a {
   .wrapper {
     margin: 0 60px; } }
 
+.highlighted {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: highlighted;
+          animation-name: highlighted; }
+
+@-webkit-keyframes highlighted {
+  from {
+    background-color: #fec3ba; }
+  50% {
+    background-color: white; }
+  to {
+    background-color: transparent; } }
+
+@keyframes highlighted {
+  from {
+    background-color: #fec3ba; }
+  50% {
+    background-color: white; }
+  to {
+    background-color: transparent; } }
+
 .page-header {
   border-bottom: 1px solid #f1f1f1;
   margin-bottom: 40px; }
@@ -625,6 +647,7 @@ a {
   .site-list {
     width: 85%; }
   .site-list__item {
+    padding: 22px 0;
     font-size: 22px;
     line-height: 1.09;
     font-weight: 700; } }
@@ -746,7 +769,7 @@ a {
     line-height: 0.75;
     font-weight: 700; }
   .portfolio__description {
-    margin: 0 0 45px;
+    margin: 0 0 25px;
     font-size: 20px;
     line-height: 1.3; } }
 
@@ -1171,7 +1194,7 @@ a {
 
 .overlay {
   width: 100%;
-  height: 100%;
+  height: 110%;
   position: fixed;
   top: 0;
   left: 0;

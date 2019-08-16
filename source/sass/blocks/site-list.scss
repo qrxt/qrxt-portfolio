@@ -104,6 +104,8 @@
   }
 
   .site-list__item {
+    padding: 22px 0;
+
     @include set-font(22px, 24px, 700);
   }
 }
